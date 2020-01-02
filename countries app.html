@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<html>
+
+<style>
+body {
+  width: 825px;
+  margin: 0px;
+}
+#demo {
+ width: 350px;
+  height: 200px;
+  border: 3px solid gold;
+  padding: 10px;
+  background-color: #4CAF50;
+  float: right;
+  margin-left: 20px;
+}
+
+#myImage {
+
+
+}
+
+button {
+  display: inline-block;
+  padding: 6px 12px;
+  width: 80px;
+  background-color: #337ab7;
+  color: white;
+  cursor: pointer;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  font-weight: 400;
+  border-color: #2e6da4;
+  touch-action: manipulation;
+  border-radius: 10%;
+  margin: 2px;
+ 
+  
+  
+}
+
+button:hover {
+  opacity: .7;
+}
+
+
+#bigContainer {
+  display: block;
+  margin-left: 10px;
+  height: 200px;
+  display: block;
+  margin-top: -40px;
+ 
+}
+
+#wikipedia_continer {
+  display: block;
+  margin-left: 10px;
+  height: 250px;
+  display: block;
+}
+
+
+#myTitle {
+  background-color: black;
+  color: white;
+  width: 150px;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+}
+
+
+
+a {
+   text-decoration: none;
+}
+
+</style>
+<body>
+
+<h2 id='myHead'>Select Country</h2>
+
+
+<button type="button"
+onclick="egypt()">Egypt</button>
+
+<button type="button"
+onclick="UAE()">UAE</button>
+
+<button type="button"
+onclick="Iraq()">Iraq
+</button>
+
+<button type="button"
+onclick="Syria()">Syria</button>
+
+<button type="button"
+onclick="Jordan()">Jordan</button>
+
+<button type="button"
+onclick="Lebanon()">Lebanon</button>
+
+<button type="button"
+onclick="Morocco()">Morocco</button>
+
+<button type="button"
+onclick="saudi()">saudi</button>
+
+<button type="button"
+onclick="Mauritania()">Mauritania</button>
+
+<button type="button"
+onclick="Algeria()">Algeria</button>
+
+<button type="button"
+onclick="Libya()">Libya</button>
+
+
+<button type="button"
+onclick="Tunisia()">Tunisia</button>
+
+
+<button type="button"
+onclick="Yemen()">Yemen</button>
+
+
+<button type="button"
+onclick="Mauritania()">Mauritania</button>
+
+<button type="button"
+onclick="Oman()">Oman</button>
+
+<button type="button"
+onclick="Qatar()">Qatar</button>
+
+
+<button type="button"
+onclick="Bahrain()">Bahrain</button>
+
+<button type="button"
+onclick="Kuwait()">Kuwait</button>
+
+
+<button type="button"
+onclick="Somalia()">Somalia</button>
+
+<button type="button"
+onclick="Djibouti()">Djibouti</button>
+
+<button type="button"
+onclick="Palestine()">Palestine</button>
+
+<button id='bigButton' type="button"
+onclick="Comoros()">Comoro</button>
+
+
+
+
+
+
+
+
+<br><br>
+<p id="demo"><img id='myImage' src='https://i.gifer.com/Usj0.gif' alt='Image' width='350' height='200'></p>
+
+<br><br>
+<div id='bigContainer'>
+<p id='info'><blockquote id ='here' cite="https://www.google.com/">
+<span id='myTitle'><b>Quick Info </b></span><br><br><span id='myInfo'></span>
+</blockquote>
+</p>
+
+
+</div>
+<br><br>
+<div id='wikipedia_continer' >
+<h3 id="nytimes-header">More Info Search  wikipedia Articles For : 
+<span id='mySearch'></span></h3>
+After Your search results appears Press F5 For new Search<br>
+<input id='topic' value='' placeholder='search'>
+<button type="button" onclick="loadDoc()">Search</button>
+
+<ul class='items'>
+<li class='item'></li>
+
+<li class='item'></li>
+<li class='item'></li>
+<li class='item'></li>
+<li class='item'></li>
+<li class='item'></li>
+<li class='item'></li>
+
+</ul>
+
+
+
+<table id='table'></table>
+
+<script>
+
+
+function egypt() {
+var name = document.getElementById('myHead');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var x = document.getElementById('myImage');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Egypt';
+name.innerHTML = 'Egypt';
+search.innerHTML = 'Egypt';
+info.innerHTML = "Egypt is a country in northeast Africa. Its capital city is Cairo. Egypt is famous for its ancient monuments, such as the Pyramids and the Sphinx, After the pyramids, the main reason most tourists visit Egypt is to travel back in time or, pretend to be Indiana Jones while exploring the country's ancient temples. The temples are filled with interesting carvings, paintings and hieroglyphics.";
+
+x.src = 'https://i.pinimg.com/originals/d9/30/d5/d930d573f6ffc5c7fc64ef821d3ec9e1.jpg';
+
+}
+
+function UAE() {
+var name = document.getElementById('myHead');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var x = document.getElementById('myImage');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'United Arab Emirates';
+name.innerHTML = 'United Arab Emirates';
+search.innerHTML = 'United Arab Emirates';
+search.innerHTML = 'United Arab Emirates';
+info.innerHTML = 'Abu Dhabi, Dubai, Ajman, Fujairah, Ras al Khaimah, Sharjah and Umm al Quwain - the seven emirates that make up the UAE - maintain a large degree of independence. The UAE is governed by a Supreme Council of Rulers made up of the seven emirs, who appoint the prime minister and the cabinet.';
+
+x.src = 'https://cdn.edarabia.com/wp-content/uploads/2017/10/colours-uae-flag-6.jpg';
+
+}
+
+function Iraq() {
+
+var name = document.getElementById('myHead');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var x = document.getElementById('myImage');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Iraq';
+name.innerHTML = 'Iraq';
+search.innerHTML = 'Iraq';
+info.innerHTML = 'Iraq is one of the easternmost countries of the Arab world, located at about the same latitude as the southern United States. It is bordered to the north by Turkey, to the east by Iran, to the west by Syria and Jordan, and to the south by Saudi Arabia and Kuwait.';
+
+x.src = 'https://i.pinimg.com/originals/af/bd/d0/afbdd03e8f00c212e48359532093a686.png';
+
+}
+
+function Syria() {
+var name = document.getElementById('myHead');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var x = document.getElementById('myImage');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Syria';
+name.innerHTML = 'Syria';
+search.innerHTML = 'Syria';
+info.innerHTML = "The modern name of Syria is claimed by some scholars to have derived from Herodotus' habit of referring to the whole of Mesopotamia as 'Assyria' and, after the Assyrian Empire fell in 612 BCE, the western part continued to be called 'Assyria' until after the Seleucid Empire when it became known as ";
+
+
+x.src = 'https://i.pinimg.com/originals/69/a0/ba/69a0ba79fbeb76c67daf50c6ec2e6bec.png';
+
+}
+
+function Jordan() {
+var name = document.getElementById('myHead');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var x = document.getElementById('myImage');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Jordan';
+name.innerHTML = 'Jordan';
+search.innerHTML = 'Jordan';
+info.innerHTML = 'Jordan is part of Western Asia. Known by its official name, the Hashemite Kingdom of Jordan, this country is located on the East Bank of the Jordan River, hence its name. Jordan is also an Arab country.';
+
+x.src = 'https://image.winudf.com/v2/image/Y29tLmZsYWd3YWxscGFwZXIuam9yZGFuX3NjcmVlbl8wXzE1MzU3NjIxMzRfMDUy/screen-2.jpg?fakeurl=1&type=.jpg';
+
+}
+
+function Lebanon() {
+var name = document.getElementById('myHead');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var x = document.getElementById('myImage');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Lebanon';
+name.innerHTML = 'Lebanon';
+search.innerHTML = 'Lebanon';
+info.innerHTML = "Lebanon is well known for being a vacation destination for the people of the Persian Gulf, many of whom wear the traditional hijab. Many Lebanese are rather liberal in comparison to the people of Lebanon's neighboring countries — short skirts, high heels, and bikinis are a daily sight";
+
+x.src = 'https://i.pinimg.com/originals/ed/de/b4/eddeb40affb29f769e16dcddc3854f87.jpg';
+
+}
+
+
+function Morocco() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Morocco';
+name.innerHTML = 'Morocco';
+search.innerHTML = 'Morocco';
+info.innerHTML = "Moroccan cuisine is known for being very fragrant and for satisfying most taste buds. Maybe you've already heard of the Moroccan Tajine, Moroccan Couscous or Moroccan mint tea? These are some of the most famous & cherished Moroccan dishes you can try once in Morocco";
+
+x.src = 'https://i.pinimg.com/originals/11/e1/d9/11e1d9aebcd2966a9a993a31ab3d3653.jpg';
+
+}
+
+function saudi() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'saudi';
+search.innerHTML = 'saudi';
+name.innerHTML = 'saudi';
+info.innerHTML = "Saudi Arabia has the most oil of any place in the world. It ships more oil to the rest of the world than any other country. Saudi Arabia is also famous for the religion Islam and is home to Islam's holiest shrines and (الكعبة) in Mecca and Medina. The King of Saudi Arabia is called the Custodian of the Two Holy Mosques.";
+
+x.src = 'https://www.motosha.com/wp-content/uploads/saudi-arabian-flag-1024x569.jpg';
+
+}
+
+function Mauritania() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+
+myInput.value = 'Mauritania';
+name.innerHTML = 'Mauritania';
+search.innerHTML = 'Mauritania';
+info.innerHTML = "Mauritania, country on the Atlantic coast of Africa. ... The country's mineral wealth includes large reserves of iron ore, copper, and gypsum, all of which are now being exploited, as well as some oil resources";
+
+x.src = 'https://vid.alarabiya.net/images/2017/06/07/07895844-a831-481b-8479-844a7413713d/07895844-a831-481b-8479-844a7413713d.jpg';
+
+}
+
+function Oman() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Oman';
+name.innerHTML = 'Oman';
+search.innerHTML = 'Oman';
+info.innerHTML = "Oman is famous for fresh, sea air of breathing. Muscat is famous for dazzling souks and superb sea food do not miss the famous Omani sweets known as Omani Halva.";
+
+x.src = 'https://img.freepik.com/free-photo/flag-oman_1401-190.jpg?size=626&ext=jpg';
+
+}
+
+function Qatar() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Qatar';
+name.innerHTML = 'Qatar';
+search.innerHTML = 'Qatar';
+info.innerHTML = "The country has the highest per capita income in the world. Qatar is classified by the UN as a country of very high human development and is widely regarded as the most advanced Arab state for human development. Qatar is a high-income economy, backed by the world's third-largest natural gas reserves and oil reserves.";
+
+x.src = 'https://imgur.com/ZrJ5Ejk.jpg';
+
+}
+
+
+
+function Algeria() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+
+myInput.value = 'Algeria';
+name.innerHTML = 'Algeria';
+search.innerHTML = 'Algeria';
+info.innerHTML = "France would rule most of Algeria until the 1900s. In the mid-1900s the Algerians began to rebel against French rule. The National Liberation Front (FLN) was formed in 1954 and began to fight France. In 1962, Algeria gained its independence and over 1 million French fled the country.";
+
+x.src = 'https://i.ytimg.com/vi/cvjDEuNteec/maxresdefault.jpg';
+
+}
+
+function Libya() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Libya';
+name.innerHTML = 'Libya';
+search.innerHTML = 'Libya';
+info.innerHTML = "Libya's history covers its rich mix of ethnic groups added to the indigenous Berber tribes. ... The modern history of independent Libya began in 1951. The history of Libya comprises six distinct periods: Ancient Libya, the Roman era, the Islamic era, Ottoman rule, Italian rule, and the Modern era.";
+
+x.src = 'https://ak9.picdn.net/shutterstock/videos/20716219/thumb/1.jpg';
+
+}
+
+function Yemen() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var search = document.getElementById('mySearch');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Yemen';
+name.innerHTML = 'Yemen';
+search.innerHTML = 'Yemen';
+info.innerHTML = 'Yemen sometimes spelled Yaman, officially the Republic of Yemen is a country at the southern .... Further information: Arabia Felix, South Arabia, and Hamavaran. The term Yamnat was mentioned in Old South Arabian inscriptions';
+x.src = 'https://alamphoto.com/wp-content/uploads/2018/01/Flag-of-Yemen-1-623x351.jpg';
+
+}
+
+
+function Tunisia() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Tunisia';
+name.innerHTML = 'Tunisia';
+search.innerHTML = 'Tunisia';
+info.innerHTML = "At the beginning of recorded history, Tunisia was inhabited by Berber tribes. Its coast was settled by Phoenicians starting as early as the 12th century BC (Bizerte, Utica). ... The settlers of Carthage brought their culture and religion from Phoenicia, now present-day Lebanon and adjacent areas.";
+
+x.src = 'https://ak8.picdn.net/shutterstock/videos/2623718/thumb/1.jpg';
+
+}
+
+function Bahrain() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Bahrain';
+name.innerHTML = 'Bahrain';
+search.innerHTML = 'Bahrain';
+info.innerHTML = "Bahrain is famous for Oil, Pearls and world heritage sites. Before the discovery of Oil, Bahrain was popular for being the connecting port from the modern day Iraq and South East Asia. Therefore, Bahrain contains various world heritage sites making it a lovely tourist destination in the middle east";
+
+x.src = 'https://i.pinimg.com/originals/24/10/89/241089f01fdcf20fad7797532e25033c.png';
+
+}
+
+function Kuwait() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Kuwait';
+name.innerHTML = 'Kuwait';
+search.innerHTML = 'Kuwait';
+info.innerHTML = "These are the most famous facts and things that make Kuwait such a popular destination. ... The oil reserves in Kuwait makes up about 8% of the total oil reserves in the world. This country is OPEC's third largest producer of oil in the world. About 104 billion barrels of oil are produced in Kuwait.";
+
+x.src = 'https://i.pinimg.com/originals/fc/69/da/fc69da468d3931f53059d37e1845673c.jpg';
+
+}
+
+function Comoros() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'the Comoros Islands';
+name.innerHTML = 'the Comoros Islands';
+search.innerHTML = 'the Comoros Islands';
+info.innerHTML = "The volcanic islands of the Comorian archipelago have been called the “perfumed islands” for their fragrant plant life and are known for their great scenic beauty.";
+
+x.src = 'https://i.pinimg.com/originals/03/4f/a3/034fa3b11ad72f355b0e3d4fb648d9f2.jpg';
+
+}
+
+function Somalia() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+
+myInput.value = 'Somalia';
+name.innerHTML = 'Somalia';
+search.innerHTML = 'Somalia';
+info.innerHTML = "The Republic of Somalia was formed in 1960 by the federation of a former Italian colony and a British protectorate. Mohamed Siad Barre (Maxamed Siyaad Barre) held dictatorial rule over the country from October 1969 until January 1991, when he was overthrown in a bloody civil war waged by clan-based guerrillas.";
+
+x.src = 'https://s1.1zoom.me/b5050/870/333062-alexfas01_2560x1440.jpg';
+
+}
+
+function Djibouti() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+myInput.value = 'Djibouti';
+name.innerHTML = 'Djibouti';
+search.innerHTML = 'Djibouti';
+info.innerHTML = 'It was founded during the Afar depression in 1974. The lake is also known for its limestone vents and flamingos. The Danakil Desert is a lowland geothermal region which covers much of western Djibouti. The Danakil Desert extends into Ethiopia and Eritrea.';
+
+x.src = 'https://media.gettyimages.com/videos/djibouti-flag-video-id1137739516?s=640x640';
+
+}
+
+
+function Palestine() {
+var x = document.getElementById('myImage');
+var info = document.getElementById('myInfo');
+var name = document.getElementById('myHead');
+var myInput = document.getElementById('topic');
+myInput.value = 'Palestine';
+name.innerHTML = 'Palestine';
+search.innerHTML = 'Palestine';
+info.innerHTML = "The first appearance of the term 'Palestine' was in 5th century BC Ancient Greece when Herodotus wrote of a 'district of Syria, called Palaistinê' between Phoenicia and Egypt in The Histories.";
+
+x.src = 'https://img.freepik.com/free-photo/flag-palestine_1401-194.jpg?size=626&ext=jpg';
+
+}
+
+
+
+
+
+
+
+
+//
+</script>
+<script>
+
+function loadDoc() {
+
+//Create a new object to interact with the server
+var xhr = new XMLHttpRequest();
+myInput = document.getElementById("topic");
+var xname = document.getElementById('myHead');
+
+var url = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=5&gsrsearch=" + myInput.value ;
+
+
+// Provide 3 arguments (GET/POST, The URL, Async True/False)
+xhr.open('GET', url, true);
+ 
+// Once request has loaded...
+xhr.onload = function() {
+    // Parse the request into JSON
+    var data = JSON.parse(this.response);
+    
+
+
+   
+     
+    // Loop through the data object
+    // Pulling out the titles of each page
+    
+    
+    myPages = []
+    ids = []
+    var wikipedia_pages = data.query.pages;
+    
+    //this for table
+   
+     for (var i in wikipedia_pages) { 
+      myPages.push(wikipedia_pages[i].title);
+      
+      ids.push(wikipedia_pages[i].pageid);
+     }
+
+
+  //access the list or ul first child node
+  var list = document.getElementsByClassName("items")[0];  
+  
+   var table="<tr><th>Page</th></tr>";
+   
+   for (var n = 0; n < myPages.length; n++) {
+   
+   //  loop thro array myPages and print each page in li
+   var fullUrl = 'https://en.wikipedia.org/wiki/' + myPages[n];
+  list.getElementsByClassName("item")[n].innerHTML += '<a href="' + 
+  fullUrl + '">' + myPages[n] + '</a>';
+ 
+ // better for undefined number will loop throgh the items and print as it has items
+  table += '<tr><td>' +
+  myPages[n] + 
+  '</td></tr>';
+  
+  
+  }
+
+
+  
+
+   
+        
+}
+// Send request to the server asynchronously
+xhr.send();
+
+  
+  };
+
+  
+function changeStyle() {
+ var getTable = document.getElementById('table');
+
+ getTable.style.background = 'black';
+ getTable.style.color = 'white';
+ getTable.style.border = '2px solid white';
+
+ 
+}
+</script>
+
+</body>
+</html> 
